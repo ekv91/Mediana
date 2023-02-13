@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: rgb(137, 143, 143);
+}
+#app {
+  background-color: white;
+  position: absolute;
+  margin: 100px 0;
+  width: 80%;
+  min-height: 80vh;
+  left: 50%;
+  top: 50%;
+  transform: translatex(-50%);
+  border: 2px solid #999;
+  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999,
+    4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
+  box-shadow: inset 0 0 300px #888;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+button,
+input[type='number'] {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+input {
+  margin-left: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+#dodajButton {
+  background-color: rgb(163, 231, 161);
+}
+#dodajRandom {
+  background-color: rgb(129, 216, 67);
+}
+
+#odstraniRandomStevilko {
+  background-color: #f59d9d;
+}
+#odstraniVse {
+  background-color: #d12121;
+}
+#izacunajMediano {
+  background-color: yellow;
+}
+
+#medianTabela {
+  width: 50%;
+  overflow: none;
+  margin: 100px auto;
+  text-align: center;
+}
+#medianTabela th {
+  width: 50%;
+  padding: 10px 0;
+}
+
+.izbrisiMediano {
+  background-color: #d12121;
+  margin-left: 30px;
+}
+
+th {
+  background-color: rgb(137, 143, 143);
+}
+
+th {
+  border: 1px solid black;
+  padding: 0;
+  text-align: center;
+}
+
+.tabela1 {
+  padding: 0;
+  text-align: center;
+
+  /* border: 1px solid black; */
+}
+
+#listaStevilk {
+  max-width: fit-content;
+  list-style: none;
+  overflow: hidden;
+  padding: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#listaStevilk li {
+  text-align: center;
+  padding: 3px;
+  width: 2rem;
+  border: 1px solid gray;
+  background-color: rgb(217, 238, 238);
+  margin: 2px;
+}
+
+.mediana {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#izracunajMediano {
+  background-color: yellow;
+}
+#nakljucnaTabela {
+  margin: 20px auto;
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #app {
+    width: 90%;
+    margin-top: 5%;
+    transition: 0.5s ease;
+  }
+  .buttons {
+    flex-direction: column;
+    width: max-content;
+    margin: auto;
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+  input[type='number'] {
+    margin: 0 auto;
+    width: max-content;
+    margin-bottom: 20px;
+  }
+  button {
+    margin-top: 10px;
+  }
+}
+#medianTabela td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #medianTabela {
+    width: 90%;
+    font-size: small;
+    transition: 0.5s ease;
+  }
+}

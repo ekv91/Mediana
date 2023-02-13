@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Mediana številke</h1>
+      <table id="nakljucnaTabela">
+        <tbody>
+          <td class="tabela1"><ul id="listaStevilk"></ul></td>
+          <!-- Podatki o medianah bodo tukaj -->
+        </tbody>
+      </table>
+      <div class="buttons">
+        <input
+          type="number"
+          id="dodajInput"
+          placeholder="Unesite celo številko"
+        />
+        <button id="dodajButton">DODAJ ŠTEVILKO</button>
+        <button id="dodajRandom">DODAJ NAKLJUČNO ŠTEVILKO</button>
+
+        <button id="odstraniRandomStevilko">ODSTRANI ŠTEVILKO</button>
+        <button id="odstraniVse">IZBRIŠI VSE</button>
+      </div>
+      <div class="mediana">
+        <button id="izracunajMediano">IZRAČUNAJ MEDIANO</button>
+      </div>
+
+      <table id="medianTabela">
+        <thead>
+          <tr>
+            <th>Created at</th>
+            <th>Mediana</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
